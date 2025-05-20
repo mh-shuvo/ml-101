@@ -3,3 +3,4 @@
 2. [Basic Data Exploration](./basic_data_exploration//notes.md)
 3. [First Machine Learning Model](./first_ml_model/notes.md)
 4. [Model Validation](./model_validation/notes.md)
+5. [Underfitting and Overfitting](./underfitting_and_overfitting/notes.md)
