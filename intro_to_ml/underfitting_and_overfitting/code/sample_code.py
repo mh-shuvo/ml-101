@@ -26,6 +26,8 @@ train_X,val_X,train_y,val_y = train_test_split(X,y,random_state=0)
 Now we are going to figure the best leaf nodes from some user defined leaf nods. We want to see
 how much will be the mean_absolute_error for different number of tree depth
 here we will use sample leaf_nodes array and call get_mae() to get the mean_absolute_error for each of the item
+------
+ tree's depth is a measure of how many splits it makes before coming to a prediction. This is a relatively shallow tree
 '''
 
 def get_mae(max_leaf_nodes,train_X,train_y,val_X,val_y):
