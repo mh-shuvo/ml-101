@@ -16,6 +16,7 @@ house_price_project/
 ├── main.py                    # Script to make prediction from trained model
 ├── train_model.py             # Trains the ML model and saves it as a .pkl file
 ├── result.pkl                 # Saved model after training
+├── view.py                    # data apps. visual realtime predictions with custom data
 ├── README.md                  # You're reading this!
 ```
 
