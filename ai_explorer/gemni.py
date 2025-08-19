@@ -11,23 +11,23 @@ def call_gemini():
         # --- 1. Configure the API key ---
         # It's best practice to store your API key in an environment variable.
         # This line retrieves the key from the environment.
-        api_key = os.getenv("GEMINI_API_KEY")
+        api_key = os.getenv("GOOGLE_PUBLIC_API_KEY")
         
         if not api_key:
-            raise ValueError("GEMINI_API_KEY environment variable not set. Please set it to your API key.")
+            raise ValueError("GOOGLE_PUBLIC_API_KEY environment variable not set. Please set it to your API key.")
             
         genai.configure(api_key=api_key)
         
         # list of models
-        models = genai.list_models()
-        print("Available models:")
-        for model in models:
-            print(f"- {model.name}")   
+        # models = genai.list_models()
+        # print("Available models:")
+        # for model in models:
+        #     print(f"- {model.name}")   
 
         # --- 2. Initialize the Generative Model ---
         # We use GenerativeModel to get an instance of the model.
         print("Initializing the Gemini model...")
-        model = genai.GenerativeModel(model_name="gemini-1.5-pro")
+        model = genai.GenerativeModel(model_name="gemini-1.5-flash-latest")
 
         # --- 3. Define your prompt ---
         # This is the input you want to send to the model.
